@@ -1,0 +1,48 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product{
+    a{
+        display: block;
+    }
+    flex-grow: 1;
+    max-width: 300px;
+    &:hover &__name{
+        text-decoration: underline;
+    }
+    &__cost{
+        position: absolute;
+        padding: 10px 20px;
+        background-color: #4f4f4f;
+        color: #fff;
+        bottom: 0;
+        right: 0;
+
+    }
+    &__imgWrapper{
+        position: relative;
+    }
+    &__wrapper{
+        min-width: 250px;
+        padding: 0 10px;
+        img{
+            max-width: 100%;
+            width: 100%;
+            
+        }
+    }
+}
+.sort{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    &__btn{
+        margin: 0 5px;
+        background-color: #d83e35;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}

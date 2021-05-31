@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    background-color: #eeeeee;
+}
+.admission{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.36);
+    max-width: 300px;
+    width: 100%;
+    &__header{
+        border-radius: 15px 15px 0 0;
+        background-color: #282830;
+        color: #f1f5ef;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 30px;
+        font-weight: bold;
+    }
+    &__link{
+        text-decoration: none;
+        color: gray;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__name{}
+    &__wrapper{
+        padding: 0 10px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.logForm{
+    &__input{
+        margin-bottom: 0px;
+        max-width: 100%;
+        width: 100%;
+        padding: 8px 5px;
+        border: 2px solid #f6f6f6;
+    }
+}
+
+button[type="submit"]{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #99b6df;
+    background: linear-gradient(#99b6df, #638ec8);
+    border: solid 1px #6d94ce;
+    box-shadow: inset 0 0 0 1px #bbcfeb;
+    color: #fff;
+    &:hover{
+        background: #99b6df;
+    }
+    &:active{
+        background: #638ec8;
+        background: linear-gradient(#638ec8, #99b6df);
+        border: solid 1px #6d94ce;
+        box-shadow: inset 0 10px 15px 0 #4176c4; 
+    }
+}

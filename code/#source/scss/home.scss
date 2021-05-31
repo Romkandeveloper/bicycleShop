@@ -1,0 +1,40 @@
+@import "vars";
+@import "fonts";
+@import "base";
+
+body{
+    background-color: #ec7958;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    background-color: seashell;
+    box-shadow: 4px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    &__content{
+        flex-grow: 1;
+    }
+    &__description{
+        padding: 20px 30px;
+        background-color: #f4f4f4;
+        color: #444444;
+    }
+    &__title{
+        font-size: 20px;
+    }
+    &__subtitle{
+        font-size: 12px;
+    }
+}
+.slaider{
+    grid-column: 1 / -1;
+}
+.goods{
+}
+.statistic{
+    grid-column: span 2;
+}
+
+.cart{
+    grid-column: span 2; 
+}

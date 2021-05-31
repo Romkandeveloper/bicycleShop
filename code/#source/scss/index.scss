@@ -1,0 +1,37 @@
+.product{
+    width: 100%;
+    &__image{
+        max-width: 50%;
+        width: 100%;
+        img{
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        @media screen and (max-width:1000px){
+            flex-wrap: wrap;
+        }
+        justify-content: center;
+     
+    }
+    &__information{
+        max-width: 50%;
+        @media screen and (max-width:1000px){
+            max-width: none;
+        }
+    }
+}
+.button{
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    background-color: #d83e35;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: darkred;
+    }
+}
